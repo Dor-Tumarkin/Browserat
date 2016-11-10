@@ -17,7 +17,7 @@ Browserat is a quick-and-dirty demo of a reverse shell, capable of executing Win
 
 # Caveats
 This is hastily written POC code. It is intended to demonstrate basic command execution, and not much more. I don't intend to maintain, fix or add features to it, as I feel it serves its purpose as is. Running it is likely to leave you exposed, so use responsibly.
-Also, this is not the original POC. It has been rewritten to be a lot less messy, but consequently was not as widely tested. The original POC was proven to work across Windows 7, 8, 10 and Chrome, Interent Explorer, Firefox; this version PROBABLY shouldn't be any different.
+Also, this is not the original POC. It has been rewritten to be a lot less messy, but consequently was not as widely tested. The original POC was proven to work across Windows 7, 8, 10 and Chrome, Interent Explorer, Firefox; this version PROBABLY shouldn't be any different. Data is sent and received as Base64 encoded to help with special chars.
 
 # Features
 Browserat saves all outputs to a SQLite DB in the form of a history. You can access the history from the BRAT> CLI. It's all in the help blob. Browserat runs in a "cmd /c" Powershell context; by starting a statement with a semi-colon (;), you can easily escape it to execute regular Powershell syntax.
