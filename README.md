@@ -12,7 +12,7 @@ Browserat is a quick-and-dirty demo of a reverse shell, capable of executing Win
 3) The page returned by the Browserat server is a two-pronged CORS enabled web-page, which constantly polls the server for new commands and, once received, sends the new command to the localhost web-server for execution, obtains output from the response, and sends it back to the server.
 
 # Setup
-* Server-side - Use "pip install -r requirements.txt" to obtain the relevant requirements. Then, simply execute Browserat.py until a BRAT> prompt is seen.
+* Server-side - Use "pip install -r requirements.txt" to obtain the relevant requirements. Then, simply execute Browserat.py until a BRAT> prompt is seen. Server-side files are /static/jquery-3.0.0.min.js and Browserat.py
 * Client-side - edit the $controllerUrl parameter with your server's IP. Edit $browser_path to point at the browser you want to use (easy to implement a search and execute functionality here). If you want to run the browser in hidden mode, remove <##> from the <# -WindowStyle hidden #> flag. You will receive no prompts of a successful connection, so simply type "BRAT> dir" to verify it works.
 
 # Caveats
