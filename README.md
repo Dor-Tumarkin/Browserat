@@ -29,4 +29,4 @@ The assumptions we're working with here are:
 * That the victim browser can access the Browserat server, either directly or via a web-proxy
 
 # Acks
-Thanks to Oren Ofer and Roy Haroush for helping with the concept, code and testing on the original POC.
+Thanks to Oren Ofer and Roy Haroush for helping with the concept and testing on the original POC.
