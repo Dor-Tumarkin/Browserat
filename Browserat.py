@@ -70,7 +70,7 @@ def controller():
 var cmd = "";
 
 function execute () {
-	$.post(\"""" + LOCALHOST_ADDRESS + """",{'c' : encodeURI(cmd) }, function( data ) {
+	$.get(\"""" + LOCALHOST_ADDRESS + """",{'c' : encodeURI(cmd) }, function( data ) {
 		var b64d = data;
 		var b64c = cmd;
 		$( ".result" ).html( "Output obtained.");
