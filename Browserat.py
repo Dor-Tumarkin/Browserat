@@ -19,7 +19,8 @@ from flask_sqlalchemy import SQLAlchemy
 BROWSERAT_PROMPT = "BRAT> "
 LOCALHOST_ADDRESS = "http://localhost:8899/do" #Browserat client-side web-server for OS command execution
 DB_LOCATION = 'sqlite:///browserat.sqlite3'
-TITLE = """Browserat v0.4
+TITLE = """
+Browserat v0.4
  """[1:]
 HELP_BLOB = """
 help - this help screen
